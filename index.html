@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr,en">
+<head>
+    <meta charset="UTF-8">
+    <title>TheDevJob</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra:wght@700&family=Grandstander:ital,wght@0,500;0,900;1,500;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
+            <a href="#" class="navbar-brand ms-lg-5">
+                <h1 class="display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                    <a href="" class="nav-item nav-link">À Propos</a>
+                    <a href="" class="nav-item nav-link">Service</a>
+                    <a href="" class="nav-item nav-link">Compétences</a>
+                    <a href="" class="nav-item nav-link">Portfolio</a>
+                    <a href="" class="nav-item nav-link">Contact</a>
+                 </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    <section><!-- id="hero" class="hero" -->
+        <div class="wrapper">
+            <div class="cols cols0">
+                <div class="">
+                    <span class="topline">Bienvenue Je suis</span>
+                    <h1>Fapethedev</h1>
+                    <h2>Un <span class="multi-text"></span></h2>
+                    <p>
+                        Je developpe essentiellement des applications web, des apis et des bots telegram
+                        Je fais usage des meilleurs technologies disponibles sur le web. Mon langage de prédilection est Java.
+                        J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
+                    </p>
+                    <div class="flex-column">
+                        <a href="#" class="btn btn-primary shadow-lg">Demander Mes Services</a>
+                        <a href="#" class="btn btn-outline-light shadow-lg">Explore more</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-right">
+<!--                    <img src="assets/img/alex-vidal.png" alt="alex-vidal">-->
+                </div>
+
+            </div>
+        </div>
+    </section><!-- /.hero -->
+
+
+        <section class="card-container">
+            <div class="card-item">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit non met null.
+                        Excepteur sint occaecat cupid id null pariatur
+                     </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            const typed = new Typed('.multi-text', {
+                strings: ["Developpeur Web", "Analyste Programmeur", "Consultant Java", "Developpeur Java"],
+                loop: true,
+                typeSpeed: 110,
+                backSpeed: 80,
+                backDelay: 1700,
+            });
+        </script>
+
+        <script type="text/javascript" src="assets/js/vanilla-tilt.js">
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card-item"), {
+                max:25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </footer>
+</body>
+</html>
