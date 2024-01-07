@@ -44,7 +44,9 @@
 
     <main>
 
-    <section><!-- id="hero" class="hero" -->
+    <!--intro start-->
+    <section class="intro" id="intro">
+
         <div class="wrapper">
             <div class="cols cols0">
                 <div class="">
@@ -57,19 +59,110 @@
                         J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
                     </p>
                     <div class="flex-column">
-                        <a href="#" class="btn btn-primary shadow-lg">Demander Mes Services</a>
-                        <a href="#" class="btn btn-outline-light shadow-lg">Explore more</a>
+                        <a href="#" class="btn btn-large btn-primary shadow-lg text-uppercase">Contactez Moi</a>
+                        <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-medium btn-outline-light shadow-lg" download>Voir le CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cols cols1">
+                    <div class="img-box">
+                        <img src="assets/images/intro.jpg" alt="thedevimage">
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <!--intro end-->
+
+    <!--about start-->
+    <section class="about" id="about">
+
+        <section class="aboutme" id="aboutme">
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">à propos de moi</h2>
+                    </div>
+
+                    <div class="row gx-5">
+                        <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded-3" src="assets/images/aboutme.jpg"
+                                     style="object-fit: cover;" alt="fapethedevpicture">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="mb-4">
+                                <p>Je m'appelle</p>
+                                <h3 class="display-5 mb-0"> FATIGBA Abiola Pierre-Edy</h3>
+                                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">alias Fapethedev</h4>
+                            </div>
+                            <p class="mb-4">
+                                Je suis née le 23 mars 2002 à Lomé en République Togolaise en chez moi je suis un Komi.<br>
+                                J'aurai 22 ans cette année 2024. Je fais 165cm et 55kg.<br>
+                                J'ai fait mes études primaires et secondaire à Lomé.<br>
+                            </p>
+                            <p class="mb-4 text-secondary-emphasis">
+                                Je suis un passioné de football et de sport en général. J'adore tout ce qui est nouvelle technologie.<br>
+                                Je parle français, ewe et à quelques occasions l'anglais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline container-fluid py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Parcours & Formations</h2>
+                <h4 class="display-5 mb-0">Parcours</h4>
+            </div>
+            <div class="timeline-items container">
+                <div class="timeline-item row gx-5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>License Professionnelle</h3>
+                        <p>
+                            UCAO-UUT Zanguera, Lomé-TOGO<br>
+                            Institut : <b>ISTIN</b><br>
+                            Spécialité : <b>Développement d'applications</b><br>
+                        </p>
                     </div>
                 </div>
 
-                <div class="col-md-6 text-right">
-<!--                    <img src="assets/img/alex-vidal.png" alt="alex-vidal">-->
+                <div class="timeline-item row gx-5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat</h3>
+                        <p>
+                            Collège Protestant Lomé-Tokoin Lomé-Tokoin<br>
+                            Série : <b>D</b><br>
+                            Mention : <b>Assez Bien</b><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item row gx-5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016 - 2017</div>
+                    <div class="timeline-content">
+                        <h3>BEPC</h3>
+                        <p>
+                            Collège Protestant Lomé-Tokoin Lomé-Tokoin<br>
+                            Série : <b>D</b><br>
+                            Mention : <b>Bien</b><br>
+                        </p>
+                    </div>
                 </div>
 
             </div>
-        </div>
-    </section><!-- /.hero -->
+        </section>
 
+    </section>
+    <!--about end-->
 
         <section class="card-container">
             <div class="card-item">
@@ -88,28 +181,33 @@
     </main>
 
     <footer>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <!-- Setup and start animation! -->
-        <script>
-            const typed = new Typed('.multi-text', {
-                strings: ["Developpeur Web", "Analyste Programmeur", "Consultant Java", "Developpeur Java"],
-                loop: true,
-                typeSpeed: 110,
-                backSpeed: 80,
-                backDelay: 1700,
-            });
-        </script>
+        <section class="bg-dark">
 
-        <script type="text/javascript" src="assets/js/vanilla-tilt.js">
-        </script>
-        <script>
-            VanillaTilt.init(document.querySelectorAll(".card-item"), {
-                max:25,
-                speed: 400,
-                glare: true,
-                "max-glare": 1,
-            });
-        </script>
+        </section>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        const typed = new Typed('.multi-text', {
+            strings: ["Developpeur Web", "Ingenieur Logiciel", "Developpeur SpringBoot"],
+            loop: true,
+            typeSpeed: 110,
+            backSpeed: 80,
+            backDelay: 1700,
+        });
+    </script>
+
+    <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card-item"), {
+            max:25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </body>
 </html>
