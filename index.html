@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>TheDevJob</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="TheDevJob" name="keywords">
+    <meta content="Fapethedev web portfolio" name="description">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra:wght@700&family=Grandstander:ital,wght@0,500;0,900;1,500;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/social-icons.css">
 
     <!-- favicons
     ================================================== -->
@@ -21,15 +28,25 @@
 </head>
 <body>
 
+    <section id="preloader" class="preloader">
+        <div class="annonce">
+            <h3>FAPETHEDEV</h3>
+            <h4><span class="annonce-message"></span></h4>
+        </div>
+    </section>
+
+
+<!--    <div id="main-content">-->
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
+        <nav id="navbar" class="navbar navbar-collapse navbar-expand-sm navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
             <a href="#" class="navbar-brand ms-lg-5">
                 <h1 class="display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div id="navbarCollapse" class="collapse navbar-collapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Accueil</a>
                     <a href="" class="nav-item nav-link">À Propos</a>
@@ -40,162 +57,275 @@
                  </div>
             </div>
         </nav>
+
+<!--        <aside>-->
+<!--            <ol  class="side-nav-indicator">-->
+<!--                <li class="is-active"></li>-->
+<!--                <li></li>-->
+<!--                <li></li>-->
+<!--                <li></li>-->
+<!--                <li></li>-->
+<!--                <li></li>-->
+<!--            </ol>-->
+<!--        </aside>-->
     </header>
 
     <main>
 
-    <!--intro start-->
-    <section class="intro" id="intro">
+        <!--intro start-->
+        <section class="intro" id="intro">
 
-        <div class="wrapper">
-            <div class="cols cols0">
-                <div class="">
-                    <span class="topline">Bienvenue Je suis</span>
-                    <h1>Fapethedev</h1>
-                    <h2>Un <span class="multi-text"></span></h2>
-                    <p>
-                        Je developpe essentiellement des applications web, des apis et des bots telegram
-                        Je fais usage des meilleurs technologies disponibles sur le web. Mon langage de prédilection est Java.
-                        J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
-                    </p>
-                    <div class="flex-column">
-                        <a href="#" class="btn btn-large btn-primary shadow-lg text-uppercase">Contactez Moi</a>
-                        <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-medium btn-outline-light shadow-lg" download>Voir le CV</a>
+            <div class="wrapper">
+                <div class="cols cols0">
+                    <div class="">
+                        <span class="topline">Bienvenue Je suis</span>
+                        <h1>Fapethedev</h1>
+                        <h2>Un <span class="multi-text"></span></h2>
+                        <p>
+                            Je developpe essentiellement des applications web, des apis et des bots telegram
+                            Je fais usage des meilleurs technologies disponibles sur le web. Mon langage de prédilection est Java.
+                            J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
+                        </p>
+                        <div class="flex-column">
+                            <a href="#" class="btn btn-large btn-primary shadow-lg text-uppercase">Contactez Moi</a>
+                            <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-medium btn-outline-light shadow-lg" download>Voir le CV</a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="cols cols1">
+                        <div class="img-box">
+                            <img class="rounded-3" src="assets/images/intro.jpg" alt="thedevimage">
+                        </div>
                 </div>
             </div>
 
-            <div class="cols cols1">
-                    <div class="img-box">
-                        <img src="assets/images/intro.jpg" alt="thedevimage">
+        </section>
+        <!--intro end-->
+
+        <!--about start-->
+        <section class="about" id="about">
+
+            <section class="aboutme" id="aboutme">
+                <div class="container-fluid py-5">
+                    <div class="container">
+                        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                            <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">à propos de moi</h2>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded-3" src="assets/images/aboutme.jpg"
+                                         style="object-fit: cover;" alt="fapethedevpicture">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="mb-4">
+                                    <p>Je m'appelle</p>
+                                    <h3 class="display-5 mb-0"> FATIGBA Abiola Pierre-Edy</h3>
+                                    <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">alias Fapethedev</h4>
+                                </div>
+                                <p class="mb-4">
+                                    Je suis née le 23 mars 2002 à Lomé en République Togolaise en chez moi je suis un Komi.<br>
+                                    J'aurai 22 ans cette année 2024. Je fais 165cm et 55kg.<br>
+                                    J'ai fait mes études primaires et secondaire à Lomé.<br>
+                                </p>
+                                <p class="mb-4 text-secondary-emphasis">
+                                    Je suis un passioné de football et de sport en général. J'adore tout ce qui est nouvelle technologie.<br>
+                                    Je parle français, ewe et à quelques occasions l'anglais.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-            </div>
-        </div>
+                </div>
+            </section>
 
-    </section>
-    <!--intro end-->
+            <section class="timeline container-fluid py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                        Parcours & Formations
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    </h2>
+                    <h3 class="display-5 mb-0">Parcours <i class="fa fa-map"></i> </h3>
+                </div>
+                <div class="timeline-items container">
 
-    <!--about start-->
-    <section class="about" id="about">
+                    <div class="timeline-item row gx-5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>License Professionnelle</h3>
+                            <p>
+                                UCAO-UUT Zanguera, Lomé-TOGO<br>
+                                Institut : <b>ISTIN</b><br>
+                                Spécialité : <b>Développement d'applications</b><br>
+                            </p>
+                        </div>
+                    </div>
 
-        <section class="aboutme" id="aboutme">
+                    <div class="timeline-item row gx-5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019 - 2020</div>
+                        <div class="timeline-content">
+                            <h3>Baccalauréat</h3>
+                            <p>
+                                Collège Protestant Lomé-Tokoin Lomé-Tokoin<br>
+                                Série : <b>D</b><br>
+                                Mention : <b>Assez Bien</b><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item row gx-5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2016 - 2017</div>
+                        <div class="timeline-content">
+                            <h3>BEPC</h3>
+                            <p>
+                                Collège Protestant Lomé-Tokoin Lomé-Tokoin<br>
+                                Série : <b>D</b><br>
+                                Mention : <b>Bien</b><br>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+        <!--about end-->
+
+        <!--service start-->
+        <section class="service>" id="service">
             <div class="container-fluid py-5">
                 <div class="container">
                     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-                        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">à propos de moi</h2>
+                        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                            Mes Services
+                            <i class="fa fa-credit-card-alt"></i>
+                        </h2>
                     </div>
+                </div>
 
-                    <div class="row gx-5">
-                        <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded-3" src="assets/images/aboutme.jpg"
-                                     style="object-fit: cover;" alt="fapethedevpicture">
+    <!--            <div class="row g-5">-->
+                <div id="serviceCarousel">
+                    <div class="card-container">
+                        <div class="card-item ">
+                            <div class="content">
+                                <h2>01</h2>
+                                <h3>Développement D'Application</h3>
+                                <p>
+                                    Création d'application d'entrepise et/ou personnel
+                                    web responsive, reactive et ergonomique.
+                                 </p>
+                                <a href="#">Voir Plus</a>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="mb-4">
-                                <p>Je m'appelle</p>
-                                <h3 class="display-5 mb-0"> FATIGBA Abiola Pierre-Edy</h3>
-                                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">alias Fapethedev</h4>
+                        <div class="card-item ">
+                            <div class="content">
+                                <h2>02</h2>
+                                <h3>Conception Logiciel</h3>
+                                <p>
+                                    Modélisation et conception de solution logicielle
+                                    performante, légère et multiplatforme.
+                                 </p>
+                                <a href="#">Voir Plus</a>
                             </div>
-                            <p class="mb-4">
-                                Je suis née le 23 mars 2002 à Lomé en République Togolaise en chez moi je suis un Komi.<br>
-                                J'aurai 22 ans cette année 2024. Je fais 165cm et 55kg.<br>
-                                J'ai fait mes études primaires et secondaire à Lomé.<br>
-                            </p>
-                            <p class="mb-4 text-secondary-emphasis">
-                                Je suis un passioné de football et de sport en général. J'adore tout ce qui est nouvelle technologie.<br>
-                                Je parle français, ewe et à quelques occasions l'anglais.
-                            </p>
+                        </div>
+                        <div class="card-item ">
+                            <div class="content">
+                                <h2>03</h2>
+                                <h3>E-Learning</h3>
+                                <p>
+                                    Enseignement de l'algorithmique,
+                                    la programmation et du deboguage à l'aide
+                                    mes meilleurs IDE du marché.
+                                 </p>
+                                <a href="#">Voir Plus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="container py-2">
+                        <div class="text-center text-uppercase mx-auto mb-5">
+                            <a href="#" class="btn btn-outline-primary shadow">Voir Tous</a>
+                        </div>
+                </div>
+    <!--            </div>-->
             </div>
         </section>
+        <!--service end-->
 
-        <section class="timeline container-fluid py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-                <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Parcours & Formations</h2>
-                <h4 class="display-5 mb-0">Parcours</h4>
-            </div>
-            <div class="timeline-items container">
-                <div class="timeline-item row gx-5">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>License Professionnelle</h3>
-                        <p>
-                            UCAO-UUT Zanguera, Lomé-TOGO<br>
-                            Institut : <b>ISTIN</b><br>
-                            Spécialité : <b>Développement d'applications</b><br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item row gx-5">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2019 - 2020</div>
-                    <div class="timeline-content">
-                        <h3>Baccalauréat</h3>
-                        <p>
-                            Collège Protestant Lomé-Tokoin Lomé-Tokoin<br>
-                            Série : <b>D</b><br>
-                            Mention : <b>Assez Bien</b><br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item row gx-5">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2016 - 2017</div>
-                    <div class="timeline-content">
-                        <h3>BEPC</h3>
-                        <p>
-                            Collège Protestant Lomé-Tokoin Lomé-Tokoin<br>
-                            Série : <b>D</b><br>
-                            Mention : <b>Bien</b><br>
-                        </p>
+        <!--skill start-->
+        <section class="skill>" id="skill">
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                            Mes Compétences
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </h2>
                     </div>
                 </div>
 
             </div>
         </section>
+        <!--skill end-->
 
-    </section>
-    <!--about end-->
-
-        <section class="card-container">
-            <div class="card-item">
-                <div class="content">
-                    <h2>01</h2>
-                    <h3>Card One</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit non met null.
-                        Excepteur sint occaecat cupid id null pariatur
-                     </p>
-                    <a href="#">Read More</a>
+        <!--folio start-->
+        <section class="folio>" id="folio">
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                            Portfolio
+                            <i class="fa fa-picture-o"></i>
+                        </h2>
+                    </div>
                 </div>
+
             </div>
         </section>
+        <!--folio end-->
     </main>
 
     <footer>
-        <section class="bg-dark">
-
+        <section class="bg-light">
+            <div class="container-fluid py-5 rounded-3 shadow-lg">
+                <div class="row justify-content-center">
+                    <div class="text-center social-icons">
+                        <a href="" class="linkedin"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+                        <a href="" class="github"><i class="fa fa-github"></i><span>Github</span></a>
+                        <a href="" class="stackoverflow"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></a>
+                        <a href="" class="codepen"><i class="fa fa-codepen"></i><span>CodePen</span></a>
+                        <a href="" class="google"><i class="fa fa-google"></i><span>Google</span></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
+
+<!--    </div>-->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
         const typed = new Typed('.multi-text', {
-            strings: ["Developpeur Web", "Ingenieur Logiciel", "Developpeur SpringBoot"],
+            strings: ["Développeur Web", "Ingénieur Logiciel", "Développeur SpringBoot"],
             loop: true,
             typeSpeed: 110,
             backSpeed: 80,
             backDelay: 1700,
         });
+
+        const annonce = new Typed('.annonce-message', {
+            strings: ["Développeur ...", "Mentor ...", "Freelancer ..."],
+            loop: true,
+            typeSpeed: 24,
+            backSpeed: 24,
+            backDelay: 500,
+        })
     </script>
 
     <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
@@ -209,5 +339,13 @@
     </script>
 
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.esm.js"></script>
+    <script type="text/javascript" src="assets/js/Headroom.js"></script>
+    <script type="text/javascript" src="assets/js/jQuery.headroom.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
 </html>

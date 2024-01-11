@@ -1,0 +1,15 @@
+@import "social-icons.css";
+
+.footer-info {
+    display: flex;
+    width: 256px;
+    height: 200px;
+    margin-bottom: -170px;
+    margin-right: 8px;
+    background-color: whitesmoke;
+    transform: translateY(-128px);
+    border-radius: 15px;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: -5px -5px 15px var(--shadow);
+}

@@ -1,0 +1,148 @@
+:root {
+    --linkedin: #0371ae;
+    --stackoverflow: #ae4a03;
+    --google: #ae0303;
+}
+
+.social-icons {
+    font-family: 'Abril Fatface', serif;
+    display: flex;
+    wrap-option: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 512px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: -5px 5px 10px var(--shadow);
+    transition: 0.5s all ease-in-out;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    box-shadow: -15px 15px 20px var(--shadow);
+}
+
+.social-icons a i {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a span {
+    position: absolute;
+    color: whitesmoke;
+    /*transform: translateY(-70px);*/
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.1s;
+}
+
+.social-icons a:hover span {
+    transform: translateY(-45px);
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.social-icons a span:before {
+    position: absolute;
+    content: '';
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid whitesmoke;
+    bottom: -6px;
+    transform: translateY(-50%);
+}
+
+.social-icons a.linkedin span {
+    background-color: var(--linkedin);
+}
+
+.social-icons a.github span {
+    background-color: var(--dark);
+    color: whitesmoke;
+}
+
+.social-icons a.stackoverflow span {
+    background-color: var(--stackoverflow);
+}
+
+.social-icons a.codepen span {
+    background-color: var(--dark);
+    color: whitesmoke;
+}
+
+.social-icons a.google span {
+    background-color: var(--google);
+}
+
+.social-icons a.linkedin span:before {
+    border-top-color: var(--linkedin);
+}
+
+.social-icons a.github span:before {
+    border-top-color: var(--dark);
+    color: whitesmoke;
+}
+
+.social-icons a.stackoverflow span:before {
+    border-top-color: var(--stackoverflow);
+}
+
+.social-icons a.codepen span:before {
+    border-top-color: var(--dark);
+}
+
+.social-icons a.google span:before {
+    border-top-color: var(--google);
+}
+
+.social-icons a.linkedin:hover {
+    background-color: var(--linkedin);
+}
+
+.social-icons a.github:hover {
+    background-color: var(--dark);
+    color: whitesmoke;
+}
+
+.social-icons a.stackoverflow:hover {
+    background-color: var(--stackoverflow);
+    color: whitesmoke;
+
+}
+
+.social-icons a.codepen:hover {
+    background-color: var(--dark);
+    color: whitesmoke;
+}
+
+.social-icons a.google:hover {
+    background-color: var(--google);
+}
+
+.social-icons a:hover i {
+    transition-delay: 0.2s;
+    color: whitesmoke;
+}
+
