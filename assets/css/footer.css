@@ -13,3 +13,13 @@
     border-bottom: none;
     box-shadow: -5px -5px 15px var(--shadow);
 }
+
+.logo {
+    font-family: 'Abril Fatface', serif;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.author {
+    font-weight: 800;
+}

@@ -35,9 +35,6 @@
         </div>
     </section>
 
-
-<!--    <div id="main-content">-->
-
     <header>
         <nav id="navbar" class="navbar navbar-collapse navbar-expand-sm navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
             <a href="#" class="navbar-brand ms-lg-5">
@@ -49,11 +46,11 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="" class="nav-item nav-link">À Propos</a>
                     <a href="" class="nav-item nav-link">Service</a>
                     <a href="" class="nav-item nav-link">Compétences</a>
                     <a href="" class="nav-item nav-link">Portfolio</a>
-                    <a href="" class="nav-item nav-link">Contact</a>
+                    <a href="" class="nav-item nav-link">À Propos</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                  </div>
             </div>
         </nav>
@@ -75,30 +72,34 @@
         <!--intro start-->
         <section class="intro" id="intro">
 
-            <div class="wrapper">
-                <div class="cols cols0">
-                    <div class="">
-                        <span class="topline">Bienvenue Je suis</span>
-                        <h1>Fapethedev</h1>
-                        <h2>Un <span class="multi-text"></span></h2>
-                        <p>
-                            Je developpe essentiellement des applications web, des apis et des bots telegram
-                            Je fais usage des meilleurs technologies disponibles sur le web. Mon langage de prédilection est Java.
-                            J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
-                        </p>
-                        <div class="flex-column">
-                            <a href="#" class="btn btn-large btn-primary shadow-lg text-uppercase">Contactez Moi</a>
-                            <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-medium btn-outline-light shadow-lg" download>Voir le CV</a>
+<!--            <div class="container container-fluid">-->
+<!--                <div class="row gx-5">-->
+                <div class="wrapper">
+                    <div class="cols cols0">
+                        <div class="">
+                            <span class="topline">Bienvenue Je suis</span>
+                            <h1>Fapethedev</h1>
+                            <h2>Un <span class="multi-text"></span></h2>
+                            <p>
+                                Je developpe essentiellement des applications web, des apis et des bots telegram
+                                Je fais usage des meilleurs technologies disponibles sur le web. Mon langage de prédilection est Java.
+                                J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
+                            </p>
+                            <div class="flex-column">
+                                <a href="contact.html" class="btn btn-large btn-primary shadow-lg text-uppercase">Contactez Moi</a>
+                                <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-medium btn-outline-light shadow-lg" download>Voir le CV</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="cols cols1">
-                        <div class="img-box">
-                            <img class="rounded-3" src="assets/images/intro.jpg" alt="thedevimage">
-                        </div>
+                    <div class="cols cols1">
+                            <div class="img-box">
+                                <img class="rounded-3" src="assets/images/intro.jpg" alt="thedevimage">
+                            </div>
+                    </div>
                 </div>
-            </div>
+<!--                </div>-->
+<!--            </div>-->
 
         </section>
         <!--intro end-->
@@ -107,7 +108,7 @@
         <section class="about" id="about">
 
             <section class="aboutme" id="aboutme">
-                <div class="container-fluid py-5">
+                <div class="container container-fluid py-5">
                     <div class="container">
                         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
                             <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">à propos de moi</h2>
@@ -248,7 +249,7 @@
                 </div>
 
                 <div class="container py-2">
-                        <div class="text-center text-uppercase mx-auto mb-5">
+                        <div class="text-center justify-content-center text-uppercase mx-auto mb-5">
                             <a href="#" class="btn btn-outline-primary shadow">Voir Tous</a>
                         </div>
                 </div>
@@ -291,9 +292,16 @@
     </main>
 
     <footer>
-        <section class="bg-light">
-            <div class="container-fluid py-5 rounded-3 shadow-lg">
+        <section id="footer">
+            <div class="container-fluid rounded-3 shadow-lg">
                 <div class="row justify-content-center">
+                    <div class="col-md-12 text-center mt-2 mb-5">
+                        <h2>
+                            <a class="logo" href="#">
+                                The<span class="flashy-title">DevJob</span>
+                            </a>
+                        </h2>
+                    </div>
                     <div class="text-center social-icons">
                         <a href="" class="linkedin"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
                         <a href="" class="github"><i class="fa fa-github"></i><span>Github</span></a>
@@ -301,12 +309,19 @@
                         <a href="" class="codepen"><i class="fa fa-codepen"></i><span>CodePen</span></a>
                         <a href="" class="google"><i class="fa fa-google"></i><span>Google</span></a>
                     </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright">
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear().toString());</script>
+                                Tous droits réservés | Conçue par<span class="author flashy-title">Fapethedev <i class="fa fa-heart" aria-hidden="true"></i></span>
+                            </p>
+                        </div>
+				    </div>
                 </div>
             </div>
         </section>
     </footer>
-
-<!--    </div>-->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->

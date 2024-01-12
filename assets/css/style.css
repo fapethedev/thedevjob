@@ -53,11 +53,11 @@
     /*background: rgba(246, 244, 241, 0.76);*/
 }
 
-nav, main {
+nav, main, footer {
     background: rgba(246, 244, 241, 0.76);
 }
 
-nav * {
+nav *, footer {
     font-family: 'Abril Fatface', serif;
 }
 
@@ -67,6 +67,10 @@ main {
 
 .text-primary {
     color: var(--pink);
+}
+
+.text-backgd {
+    color: var(--background);
 }
 
 .flashy-title {
