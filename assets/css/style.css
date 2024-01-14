@@ -100,6 +100,37 @@ main {
     color: var(--pink);
 }
 
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 4px;
+    width: 100%;
+    background-color: var(--pink);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+}
+
+.nav-link.active:after {
+    content: '';
+    opacity: 1;
+    height: 4px;
+    width: 100%;
+    background-color: var(--pink);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .side-nav-indicator {
     font-family: 'Grandstander', cursive;
     list-style: decimal-leading-zero;
@@ -344,6 +375,14 @@ main {
     background-color: transparent;
 }
 
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 2px var(--shadow);
+}
 
 .card-container{
     position: relative;
@@ -383,10 +422,6 @@ main {
     transition: 0.8s;
 }
 
-/*.card-container .card-item:hover .content{*/
-/*    transform: translateY(0);*/
-/*    opacity: 1;*/
-/*}*/
 
 .card-container .card-item .content h2{
     position: absolute;
@@ -429,6 +464,19 @@ main {
     color: var( --background);
 }
 
+.card-button {
+    overflow: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+    transform: translateX(-100px);
+}
+
+.card-body:hover .card-button {
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateX(0px);
+}
+
 @media(max-width: 767px) {
     .timeline-item::before{
         left: 7px;
@@ -446,5 +494,11 @@ main {
 
     .timeline-dot{
         left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-button {
+        opacity: 1;
     }
 }

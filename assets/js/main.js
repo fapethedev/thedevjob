@@ -37,3 +37,11 @@ const carousel = new bootstrap.Carousel('#rssCarousel');
 //Enable Popovers on rss carousel item
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+//Enable Modal for portfolio project gallery
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
