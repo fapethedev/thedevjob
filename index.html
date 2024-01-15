@@ -37,22 +37,32 @@
     </section>
 
     <header>
-        <nav id="navbar" class="navbar navbar-collapse navbar-expand-sm navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
             <a href="#" class="navbar-brand ms-lg-5">
                 <h1 class="display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navbarCollapse" class="collapse navbar-collapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="" class="nav-item nav-link">Service</a>
-                    <a href="" class="nav-item nav-link">Compétences</a>
-                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-                    <a href="" class="nav-item nav-link">À Propos</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                 </div>
+                <ul class="navbar-nav ms-auto py-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                 </ul>
             </div>
         </nav>
 
