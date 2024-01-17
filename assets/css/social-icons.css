@@ -7,7 +7,6 @@
 .social-icons {
     font-family: 'Abril Fatface', serif;
     display: flex;
-    wrap-option: wrap;
     align-items: center;
     justify-content: space-between;
     width: 512px;
