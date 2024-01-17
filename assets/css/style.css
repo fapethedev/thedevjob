@@ -11,6 +11,7 @@
     --pink-ligth: #650077;
     --blue-mid: rgba(84, 1, 98, 0.5);
     --blue: #2673cb;
+    --gold: #fdb600;
     --light: #ECF4FF;
     --gray: rgba(255, 255, 255, 0.1);
     --dark: #1e1b38;
@@ -45,7 +46,6 @@
 .annonce {
     align-content: center;
     justify-content: center;
-    vertical-align: center;
 }
 
 *{
@@ -71,6 +71,15 @@ main {
 
 .text-backgd {
     color: var(--background);
+}
+
+.skill-text {
+    transition: 0.2s ease-in-out all;
+}
+
+.skill-text:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 2px var(--shadow);
 }
 
 .flashy-title {
@@ -201,6 +210,10 @@ main {
     color: whitesmoke;
     background-color: var(--pink);
     border-color: whitesmoke;
+}
+
+.btn-gold {
+    color: var(--gold);
 }
 
 .wrapper{
@@ -497,8 +510,21 @@ main {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .card-button {
         opacity: 1;
+    }
+
+    .timeline-date
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .timeline-date
+    {
+        font-size: 16px;
     }
 }
