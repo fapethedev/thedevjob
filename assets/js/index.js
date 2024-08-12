@@ -1,9 +1,9 @@
 const typed = new Typed('.multi-text', {
   strings: [
-    "Développeur Web Java",
-    "Pratiquant DevSecOps",
-    "Intégrateur IA/ML",
-    "Intégrateur Blockchain"
+    "Java Web Developer",
+    "DevSecOps Practitioner",
+    "AI/ML Integrator",
+    "Blockchain Integrator"
   ],
   loop: true,
   typeSpeed: 60,

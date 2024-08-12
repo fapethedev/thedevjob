@@ -10,7 +10,7 @@
   })(window.jQuery);
 
 const annonce = new Typed('.annonce-message', {
-  strings: ["Plus qu'un Développeur", "Freelancer",],
+  strings: ["More than a Developer", "Freelancer",],
   loop: true,
   typeSpeed: 24,
   backSpeed: 24,
