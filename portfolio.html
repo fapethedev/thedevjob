@@ -5,7 +5,9 @@
     <title>TheDevJob - Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="TheDevJob" name="keywords">
-    <meta content="Fapethedev web portfolio" name="description">
+    <meta content="See Abiola Pierre-Edy alias Fapethedev presentation and services
+     through his portfolio website which serves him as personal website ande blog."
+          name="description">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,45 +34,45 @@
 
     <section id="preloader" class="preloader">
         <div class="annonce">
-            <h3>FAPETHEDEV</h3>
-            <h4><span class="annonce-message"></span></h4>
+            <h3 class="text-center">FAPETHEDEV</h3>
+            <h4><span class="text-center annonce-message"></span></h4>
         </div>
     </section>
 
-    <header>
-        <nav id="navbar" class="navbar navbar-expand-xl navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
-            <a href="#" class="navbar-brand ms-lg-5">
-                <h1 class="display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
+    <header class="shadow">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-light py-3 py-lg-0 px-3 px-lg-0">
+            <a href="index.html" class="navbar-brand ms-lg-5">
+                <h1 id="brand" class="brand display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto py-0">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">À Propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                 </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The<span class="flashy-title">DevJob</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
 
-        <!-- portfolio start -->
         <section id="portfolio">
             <div class="container container-fluid py-5">
                 <div class="container-sm" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
@@ -93,7 +95,183 @@
                         <div class="col-sm-6 mb-3 mb-sm-0">
                             <div class="card text-center">
                                 <div class="card-header">
-                                    Application de Bureau <i class="fa"><img class="w-25" src="assets/icons/java-desktop.png" alt="java-desktop"></i>
+                                    Application Web
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Tendance</h5>
+                                    <p class="card-text">
+                                        Application web de gestion d'évènements et
+                                        de vente de ticket réalisés avec SpringBoot.
+                                    </p>
+                                    <div class="container container-fluid">
+                                        <div class="card-button row align-items-center justify-content-center d-flex">
+                                            <div class="col-2">
+                                                <button type="button" class="btn btn-primary rounded-circle" data-bs-toggle="modal" data-bs-target="#tendanceModal">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="https://github.com/fapethedev/tendance" role="button" class="btn btn-outline-secondary">
+                                                    <i class="fa fa-link"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                   Dernière version : <b>Mai 2024.</b>
+                                </div>
+                            </div>
+                            <div class="modal modal-lg fade" id="tendanceModal" tabindex="-1" aria-labelledby="tendanceModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="tendanceModalLabel">Galerie STRyG</h1>
+                                            <button type="button" class="btn btn-danger rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+                                                <i class="fa fa-close"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="tendanceCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-theme="dark">
+                                                <div class="top-left carousel-indicators">
+                                                    <button type="button" data-bs-target="#tendanceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#tendanceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#tendanceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#tendanceCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#tendanceCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                </div>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/tendance-1.png" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/tendance-2.png" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/tendance-3.png" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/tendance-4.png" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/tendance-5.png" class="d-block w-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#strygCarousel" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#strygCarousel" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="align-self-end btn btn-outline-secondary rounded-3" data-bs-dismiss="modal">
+                                                <i class="bi bi-arrow-left"></i>
+                                            </button>
+                                            <a href="https://github.com/fapethedev/tendance" role="button" class="btn btn-primary rounded-3 icon-link-hover">
+                                                Visiter <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Application de Bureau
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Freebook</h5>
+                                    <p class="card-text">
+                                        Système de Gestion de bibliothèque.+
+                                        Statistiques détaillées sur les activités de la bibliothèque.
+                                    </p>
+                                    <div class="container container-fluid">
+                                        <div class="card-button row align-items-center justify-content-center d-flex">
+                                            <div class="col-2">
+                                                <button type="button" class="btn btn-primary rounded-circle" data-bs-toggle="modal" data-bs-target="#freebookModal">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="https://github.com/fapethedev/freebook" role="button" class="btn btn-outline-secondary">
+                                                    <i class="fa fa-link"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    Dernière Version : <b>01 Février 2024</b>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="freebookModal" tabindex="-1" aria-labelledby="freebookModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="freebookModalLabel">Galerie Freebook</h1>
+                                            <button type="button" class="btn btn-danger rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+                                                <i class="fa fa-close"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="freebookCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-theme="dark">
+                                                <div class="top-left carousel-indicators">
+                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                </div>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="" class="d-block w-100" alt="">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="" class="d-block w-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#freebookCarousel" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#freebookCarousel" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="align-self-end btn btn-outline-secondary rounded-3" data-bs-dismiss="modal">
+                                                <i class="bi bi-arrow-left"></i>
+                                            </button>
+                                            <a href="https://github.com/fapethedev/freebook" role="button" class="btn btn-primary rounded-3 icon-link-hover">
+                                                Visiter <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 mt-5">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Application de Bureau
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">STRyG</h5>
@@ -184,14 +362,6 @@
                             <div class="card text-center">
                                 <div class="card-header">
                                     Application Web E-Commerce
-                                    <div class="container container-fluid w-100 row align-items-center justify-content-center">
-                                        <div class="col-4">
-                                            <i class="fa"><img class="w-100" src="assets/icons/php.png" alt="php"></i>
-                                        </div>
-                                        <div class="col-4">
-                                            <i class="fa"><img class="w-100" src="assets/icons/laravel.png" alt=laravel></i>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">BobMeals</h5>
@@ -208,7 +378,7 @@
                                                 </button>
                                             </div>
                                             <div class="col-2">
-                                                <button href="#" type="button" class="btn btn-outline-secondary">
+                                                <button href="http://bobmeals.alwaysdata.net/home" type="button" class="btn btn-outline-secondary">
                                                     <i class="fa fa-link"></i>
                                                 </button>
                                             </div>
@@ -234,24 +404,16 @@
                                                     <button type="button" data-bs-target="#bobmealsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                     <button type="button" data-bs-target="#bobmealsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                                     <button type="button" data-bs-target="#bobmealsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#bobmealsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                    <button type="button" data-bs-target="#bobmealsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                                                 </div>
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="" class="d-block w-100" alt="...">
+                                                        <img src="assets/images/bobmeals-1.png" class="d-block w-100" alt="...">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="...">
+                                                        <img src="assets/images/bobmeals-2.png" class="d-block w-100" alt="...">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="...">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="...">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="...">
+                                                        <img src="assets/images/bobmeals-3.png" class="d-block w-100" alt="...">
                                                     </div>
                                                     </div>
                                                         <button class="carousel-control-prev" type="button" data-bs-target="#bobmealsCarousel" data-bs-slide="prev">
@@ -267,135 +429,17 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-outline-secondary rounded-3" data-bs-dismiss="modal">Retour</button>
-                                            <button href="#" type="button" class="btn btn-primary rounded-3">Visiter</button>
+                                            <button href="http://bobmeals.alwaysdata.net/home" type="button" class="btn btn-primary rounded-3">Visiter</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-5 mt-5">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                            <div class="card text-center">
-                                <div class="card-header">
-                                    Application de Bureau <i class="fa"><img class="w-25" src="assets/icons/vb.svg" alt="vb.net desktop"></i>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Freebook</h5>
-                                    <p class="card-text">
-                                        Système de Gestion de bibliothèque.
-                                        <br>
-                                        Enregistrement des lecteurs, gestion des livres, gestion des autheurs et gestion des prêts et remises de livres
-                                        <br>
-                                        Générations des etats et rapports sur les differentes phases de gestion.
-                                        <br>
-                                        Statistiques détaillées sur les activités de la bibliothèque.
-                                    </p>
-                                    <div class="container container-fluid">
-                                        <div class="card-button row align-items-center justify-content-center d-flex">
-                                            <div class="col-2">
-                                                <button type="button" class="btn btn-primary rounded-circle" data-bs-toggle="modal" data-bs-target="#freebookModal">
-                                                    <i class="fa fa-eye"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-2">
-                                                <a href="https://github.com/fapethedev/freebook" role="button" class="btn btn-outline-secondary">
-                                                    <i class="fa fa-link"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer text-body-secondary">
-                                    Dernière Version : <b>01 Février 2024</b>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="freebookModal" tabindex="-1" aria-labelledby="freebookModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="freebookModalLabel">Galerie Freebook</h1>
-                                            <button type="button" class="btn btn-danger rounded-circle" data-bs-dismiss="modal" aria-label="Close">
-                                                <i class="fa fa-close"></i>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div id="freebookCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-theme="dark">
-                                                <div class="top-left carousel-indicators">
-                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                    <button type="button" data-bs-target="#freebookCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                                </div>
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <img src="" class="d-block w-100" alt="">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="" class="d-block w-100" alt="">
-                                                    </div>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#freebookCarousel" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#freebookCarousel" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="align-self-end btn btn-outline-secondary rounded-3" data-bs-dismiss="modal">
-                                                <i class="bi bi-arrow-left"></i>
-                                            </button>
-                                            <a href="https://github.com/fapethedev/freebook" role="button" class="btn btn-primary rounded-3 icon-link-hover">
-                                                Visiter <i class="bi bi-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                            <div class="card placeholder-wave text-center">
-                                <div class="card-header placeholder">
-                                    Application de Bureau
-                                </div>
-                                <div class="card-body placeholder">
-                                    <h5 class="card-title placeholder">OGINE</h5>
-                                    <p class="card-text placeholder">
-                                        Système de Gestion des Inscriptions des Etudiants.
-                                        <br>
-                                        Opérations CRUD.
-                                        <br>
-                                        Générations des états et carte d'étudiants.
-                                    </p>
-                                    <div class="container container-fluid">
-                                        <div class="card-button placeholder row align-items-center justify-content-center d-flex">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer placeholder text-body-secondary">
-                                    Bientôt Courant <b>2024.</b>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="fs-5 fw-bold text-center"><a class="btn btn-outline-primary rounded-5" href="https://github.com/fapethedev?tab=repositories">Voir plus sur Github</a>.</p>
                 </div>
             </div>
         </section>
-        <!-- portfolio end -->
 
     </main>
 
@@ -407,14 +451,14 @@
                     <div class="col-md-12 text-center mt-2 mb-5">
                         <h2>
                             <a class="logo" href="#">
-                                The<span class="flashy-title">DevJob</span>
+                                Abiola Pierre-Edy<span class="flashy-title">FATIGBA</span>
                             </a>
                         </h2>
                     </div>
                     <div class="text-center social-icons">
-                        <a href="" class="linkedin"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                        <a href="github.io/fapethedev" class="github"><i class="fa fa-github"></i><span>Github</span></a>
-                        <a href="" class="stackoverflow"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></a>
+                        <a href="https://www.linkedin.com/in/abiola-fatigba-a0532a27b/" class="linkedin"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+                        <a href="https://github.com/fapethedev" class="github"><i class="fa fa-github"></i><span>Github</span></a>
+                        <a href="https://stackoverflow.com/users/21842186" class="stackoverflow"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></a>
                         <a href="https://codepen.io/FAPETHEDEV" class="codepen"><i class="fa fa-codepen"></i><span>CodePen</span></a>
                         <a href="mailto:mpetrivlin@gmail.com" class="google"><i class="fa fa-google"></i><span>Google</span></a>
                     </div>
@@ -433,21 +477,10 @@
         </section>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        const annonce = new Typed('.annonce-message', {
-            strings: ["Développeur ...", "Mentor ...", "Freelancer ..."],
-            loop: true,
-            typeSpeed: 24,
-            backSpeed: 24,
-            backDelay: 500,
-        })
-    </script>
-
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.esm.js"></script>
+    <script type="text/javascript" src="assets/js/@mojs_core.js"></script>
+    <script type="text/javascript" src="assets/js/scrollreveal.js"></script>
+    <script type="text/javascript" src="assets/js/typed.umd.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/Headroom.js"></script>
     <script type="text/javascript" src="assets/js/jQuery.headroom.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>

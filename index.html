@@ -5,7 +5,9 @@
     <title>TheDevJob</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="TheDevJob" name="keywords">
-    <meta content="Fapethedev web portfolio" name="description">
+    <meta content="See Abiola Pierre-Edy alias Fapethedev presentation and services
+     through his portfolio website which serves him as personal website ande blog."
+          name="description">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,82 +34,78 @@
 
     <section id="preloader" class="preloader">
         <div class="annonce">
-            <h3>FAPETHEDEV</h3>
-            <h4><span class="annonce-message"></span></h4>
+            <h3 class="text-center">FAPETHEDEV</h3>
+            <h4><span class="text-center annonce-message"></span></h4>
         </div>
     </section>
 
-    <header>
-        <nav id="navbar" class="navbar navbar-expand-xl navbar-light shadow-lg py-3 py-lg-0 px-3 px-lg-0">
+    <header class="shadow">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-light py-3 py-lg-0 px-3 px-lg-0">
             <a href="#" class="navbar-brand ms-lg-5">
-                <h1 class="display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
+                <h1 id="brand" class="brand display-5 m-0 text-dark">The<span class="flashy-title">DevJob</span></h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto py-0">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">À Propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                 </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The<span class="flashy-title">DevJob</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
 
-        <!--intro start-->
-        <section class="intro" id="intro">
+        <section class="intro headline" id="intro">
             <div class="container container-fluid py-5">
-                <div class="row g-5">
-                    <div class="col-lg-7">
-                        <div class="">
-                            <span class="topline">Bienvenue Je suis</span>
-                            <h1>Fapethedev</h1>
-                            <h2>Un <span class="multi-text"></span></h2>
-                            <p>
-                                Je developpe essentiellement des applications web, des apis et des bots telegram
-                                Je fais usage des meilleurs technologies disponibles sur le web. Mon langage de prédilection est Java.
-                                J'utilise les frameworks Spring Boot, VueJS. Je fais usage de Docker et GitHub, Redis et Hibernate et MySQL
-                            </p>
-                            <div class="container container-fluid">
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-7 mb-5">
+                        <div>
+                            <span class="topline">Bienvenue</span>
+                            <div class="whoami">
+                                <h2>Je suis Abiola Pierre-Edy FATIGBA</h2>
+                                <h3><span class="multi-text"></span></h3>
+                            </div>
+                            <div class="desc" style="text-align: justify">
+                                <p>Développeur Java spécialisé dans le backend, avec une expertise en DevSecOps,
+                                    intégration AI/ML et Blockchain.
+                                    Je maîtrise l'intégration de solutions d'intelligence artificielle et de
+                                    machine learning dans mes applications tout en respectant les meilleures
+                                    pratiques DevSecOps.
                                 <div class="row g-2 mb-2">
-                                    <div class="col-xl-auto">
-                                        <a href="contact.html" class="btn btn-primary shadow-lg text-uppercase">Contactez Moi</a>
-                                    </div>
-                                    <div class="col-sm-auto">
-                                        <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-outline-light shadow-lg" download>Voir le CV</a>
-                                    </div>
+                                    <a href="portfolio.html" class="btn btn-primary shadow-lg rounded-5 text-uppercase">Voir Mes Réalisations</a>
+                                    <a href="assets/file/CV_fapethedev_Abiola_Pierre-Edy_Fatigba.pdf" class="btn btn-outline-light shadow-lg rounded-5 text-uppercase" download>Obtenir mon CV</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="container container-md img-box">
-                            <img class="rounded-3" src="assets/images/intro.jpg" alt="thedevimage">
+<!--                            <img class="rounded-3" src="assets/images/intro.jpg" alt="thedevimage">-->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--intro end-->
 
-        <!--service start-->
-        <section class="service>" id="service">
+        <section class="service" id="service">
             <div class="container-fluid py-5">
                 <div class="container">
                     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
@@ -115,58 +113,127 @@
                             Mes Services
                             <i class="fa fa-credit-card-alt"></i>
                         </h2>
+                        <h3 class="text-secondary text-capitalize mx-auto mb-2">Que puis-je faire pour vous ?</h3>
                     </div>
                 </div>
 
-    <!--            <div class="row g-5">-->
                 <div id="serviceCarousel">
                     <div class="card-container">
-                        <div class="card-item ">
+                        <div class="card-item" data-tilt data-tilt-scale="1.1">
                             <div class="content">
                                 <h2>01</h2>
-                                <h3>Développement D'Application</h3>
+                                <h3 class="text-uppercase">Développement D'Application Web</h3>
                                 <p>
-                                    Création d'application d'entrepise et/ou personnel
+                                    Création d'application d'entreprise et/ou personnel
                                     web responsive, reactive et ergonomique.
                                  </p>
-                                <a href="#">Voir Plus</a>
+                                <a href="services.html#web-application">Voir Plus</a>
                             </div>
                         </div>
-                        <div class="card-item ">
+                        <div class="card-item" data-tilt data-tilt-scale="1.1">
                             <div class="content">
                                 <h2>02</h2>
-                                <h3>Conception Logiciel</h3>
+                                <h3 class="text-uppercase">Intégration IA/ML</h3>
                                 <p>
-                                    Modélisation et conception de solution logicielle
-                                    performante, légère et multiplatforme.
+                                    Spécialiste en intégration IA/ML pour optimiser
+                                    les applications web intelligentes et évolutives.
                                  </p>
-                                <a href="#">Voir Plus</a>
+                                <a href="services.html#ai-integration">Voir Plus</a>
                             </div>
                         </div>
-                        <div class="card-item ">
+                        <div class="card-item" data-tilt data-tilt-scale="1.1">
                             <div class="content">
                                 <h2>03</h2>
-                                <h3>E-Learning</h3>
+                                <h3 class="text-uppercase">Intégration Blockchain</h3>
                                 <p>
-                                    Enseignement de l'algorithmique,
-                                    la programmation et du deboguage à l'aide
-                                    mes meilleurs IDE du marché.
+                                    Expert en intégration de solutions Blockchain pour
+                                    des systèmes sécurisés et décentralisés.
                                  </p>
-                                <a href="#">Voir Plus</a>
+                                <a href="services.html#blockchain-integration">Voir Plus</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container container-fluid py-5">
+                <div class="container mb-5">
+                    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                            Contact
+                            <i class="fa fa-address-book"></i>
+                        </h2>
+
                     </div>
                 </div>
 
-                <div class="container py-2">
-                    <div class="text-center justify-content-center text-uppercase mx-auto mb-5">
-                        <a href="#" class="btn btn-outline-primary shadow">Voir Tous</a>
+                <div class="container rounded-3 shadow py-5">
+                    <div class="text-center mx-auto mb-2" style="max-width: 600px;">
+                        <h3 class="text-secondary mx-auto mb-2">
+                            Envoyer moi un message
+                            <i class="bi bi-envelope-at"></i>
+                        </h3>
+                    </div>
+
+                    <div class="rounded-3 row g-5">
+                        <div class="col-lg-7">
+                            <div class="p-5">
+                                <form method="post" action="#">
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control rounded-3 border-0 px-4"
+                                                   placeholder="Votre Nom" required style="height: 55px;">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="email" class="form-control rounded-3 border-0 px-4"
+                                                   placeholder="Votre Adresse Email" required style="height: 55px;">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control rounded-3 border-0 px-4"
+                                                   placeholder="Le Sujet Du Message" required style="height: 55px;">
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea class="form-control border-0 rounded-3 px-4 py-3" rows="8"
+                                                      placeholder="Le Message" required ></textarea>
+                                        </div>
+                                        <div class="">
+                                            <button class="btn btn-primary rounded-5 shadow w-100 py-3 text-uppercase" type="submit">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 p-5">
+                            <div class="shadow-lg rounded-3 p-5">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-map-marker fs-1 text-secondary me-3" style="width: 40px; height: 40px;"></i>
+                                    <div class="text-start text-dark">
+                                        <h5 class="mb-2">Domicile</h5>
+                                        <span>Lomé, Togo</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-envelope fs-1 text-secondary me-3" style="width: 40px; height: 40px;"></i>
+                                    <div class="text-start text-dark">
+                                        <h5 class="text-dark mb-2">Email</h5>
+                                        <span>mpetrivlin@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-phone fs-1 text-secondary me-3" style="width: 40px; height: 40px;"></i>
+                                    <div class="text-start text-dark">
+                                        <h5 class="mb-2">Numéro</h5>
+                                        <span>+228 99 15 72 74</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-    <!--            </div>-->
             </div>
         </section>
-        <!--service end-->
 
     </main>
 
@@ -177,14 +244,14 @@
                     <div class="col-md-12 text-center mt-2 mb-5">
                         <h2>
                             <a class="logo" href="#">
-                                The<span class="flashy-title">DevJob</span>
+                                Abiola Pierre-Edy <span class="flashy-title">FATIGBA</span>
                             </a>
                         </h2>
                     </div>
                     <div class="text-center social-icons">
-                        <a href="" class="linkedin"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                        <a href="github.io/fapethedev" class="github"><i class="fa fa-github"></i><span>Github</span></a>
-                        <a href="" class="stackoverflow"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></a>
+                        <a href="https://www.linkedin.com/in/abiola-fatigba-a0532a27b/" class="linkedin"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+                        <a href="https://github.com/fapethedev" class="github"><i class="fa fa-github"></i><span>Github</span></a>
+                        <a href="https://stackoverflow.com/users/21842186" class="stackoverflow"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></a>
                         <a href="https://codepen.io/FAPETHEDEV" class="codepen"><i class="fa fa-codepen"></i><span>CodePen</span></a>
                         <a href="mailto:mpetrivlin@gmail.com" class="google"><i class="fa fa-google"></i><span>Google</span></a>
                     </div>
@@ -203,44 +270,17 @@
         </section>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        const typed = new Typed('.multi-text', {
-            strings: ["Développeur Web", "Ingénieur Logiciel", "Développeur SpringBoot"],
-            loop: true,
-            typeSpeed: 110,
-            backSpeed: 80,
-            backDelay: 1700,
-        });
-
-        const annonce = new Typed('.annonce-message', {
-            strings: ["Développeur ...", "Mentor ...", "Freelancer ..."],
-            loop: true,
-            typeSpeed: 24,
-            backSpeed: 24,
-            backDelay: 500,
-        })
-    </script>
-
+    <script type="text/javascript" src="assets/js/@mojs_core.js"></script>
+    <script type="text/javascript" src="assets/js/scrollreveal.js"></script>
+    <script type="text/javascript" src="assets/js/typed.umd.js"></script>
     <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".card-item"), {
-            max:25,
-            speed: 400,
-            glare: true,
-            "max-glare": 1,
-        });
-    </script>
-
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.esm.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/Headroom.js"></script>
     <script type="text/javascript" src="assets/js/jQuery.headroom.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 
 </body>
 </html>
